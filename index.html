@@ -3,48 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerry Opiyo | Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>My Personal Website</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
 </head>
-<body class="bg-neon-Cyan text-black">
-    <header class="flex justify-between items-center px-10 py-6">
-    <h1 class="text-lg font-semibold">Kerry Opiyo</h1>
-    
-    <nav class="space-x-6 text-sm">
-        <a href="https://github.com/kerryopiyo1-stack/Personal-Website"
-        class="hover:text-blue-500">GitHub</a>
-        <a href="https://www.linkedin.com/in/kerry-opiyo-1944a4364" 
-        class="hover:text-blue-500">LinkedIn</a>
-        <a href="mailto:kerryopiy0758@gmail.com">
-        <button class="border px-4 py-1 rounded text-sm hover:text-blue-500">Email</button>
-        </a>
+
+<body class="bg-black text-white font-sans">
+
+<!-- Header -->
+<header class="fixed top-0 w-full bg-black bg-opacity-90 z-50">
+    <nav class="max-w-4xl mx-auto flex flex-col items-center px-6 py-4">
+        <h1 class="text-2xl font-bold mb-3">Kerry Opiyo</h1>
+        <ul class="flex space-x-6 text-sm">
+          <li><a href="#hero" class="hover:text-gray-400">Home</a></li>
+          <li><a href="#about" class="hover:text-gray-400">About</a></li>
+          <li><a href="#skills" class="hover:text-gray-400">Skills</a></li>
+          <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+          <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+        </ul>
     </nav>
 </header>
-<section class="flex flex-col md:flex-row flex-col items-center px-10 py-20">
-    <div class="max-w-xl">
-        <h2 class="text-3xl font-bold mb-4">Hi, I'm Kerry Opiyo</h2>
-        <p class="text-gray-500 mb-6">a Font-End Developer with passion for building clean, responsive  and user centric web experiences. I specialize in turning complex designs into a perfect code using HTML5 and CSS3. My goal is to create websites that aren't just functional, but also provide an exceptional user experience to everyone .</p>
-        <div class="flex-shrink-0 margin-top-10 md:mt-0 float right absolute right-60 top-30">
-            <img src="kerry.jpg" alt="Kerry Opiyo"
-            class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover boarder-4 border-gray-200 shadow-xl"/>
-            
 
-        </div>
+<!-- Hero Section -->
+<section id="hero" class="flex flex-col justify-center items-center min-h-screen px-6 pt-24 text-center">
+    <h2 class="text-4xl font-bold mb-4">Hi, I'm Kerry Opiyo</h2>
+    <h3 class="text-2xl font-semibold text-gray-300 mb-4">Full-Stack Developer</h3>
 
-    <div class="space-x-3">
-        <button class="bg-blue-500-white border px-4 py-2 rounded  hover:text-blue-500">Projects</button>
-        <section id="Skills" class="px-10 py-20 bg-grey-800">
-            <div class="max-w-4xl">
+    <p class="text-gray-400 max-w-xl mb-6">
+        Dedicated Software Engineering student with a solid foundation in front-end technologies.
+        Proficient in HTML5, CSS3, and beginner JavaScript.
+    </p>
 
-            </div>
-        </section>
-
-        </section>
-        
+    <div class="flex space-x-4">
+        <a href="#skills">
+            <button class="px-5 py-2 border border-gray-500 rounded hover:bg-gray-800">
+                Skills
+            </button>
+        </a>
+        <a href="#contact">
+            <button class="px-5 py-2 border border-gray-500 rounded hover:bg-gray-800">
+                Contact
+            </button>
+        </a>
     </div>
-    
-    
+</section>
 
+<!-- About Section -->
+<section id="about" class="px-6 py-20">
+  <div class="max-w-3xl mx-auto text-center">
+    <h3 class="text-3xl font-bold mb-4">About Me</h3>
+    <p class="text-gray-400">
+      I am a Front-End Developer passionate about building clean, responsive, and user-centric experiences.
+      I enjoy learning new technologies and working on projects that challenge me to grow.
+    </p>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="px-6 py-20">
+  <h3 class="text-3xl font-bold mb-10 text-center">Skills</h3>
+
+  <div class="max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div class="p-3 border border-gray-700 rounded text-center hover:border-gray-500">HTML5</div>
+    <div class="p-3 border border-gray-700 rounded text-center hover:border-gray-500">CSS3</div>
+    <div class="p-3 border border-gray-700 rounded text-center hover:border-gray-500">Tailwind CSS</div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="px-6 py-20">
+  <h3 class="text-3xl font-bold mb-10 text-center">Projects</h3>
+
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <div class="p-4 border border-gray-700 rounded hover:border-gray-500">
+      <h4 class="text-xl font-semibold mb-2">Project One</h4>
+      <p class="text-gray-400 text-sm">Simple website using HTML & CSS.</p>
+    </div>
+
+    <div class="p-4 border border-gray-700 rounded hover:border-gray-500">
+      <h4 class="text-xl font-semibold mb-2">Project Two</h4>
+      <p class="text-gray-400 text-sm">Responsive layout using Tailwind.</p>
+    </div>
+
+    <div class="p-4 border border-gray-700 rounded hover:border-gray-500">
+      <h4 class="text-xl font-semibold mb-2">Project Three</h4>
+      <p class="text-gray-400 text-sm">Beginner JavaScript project.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="px-6 py-20">
+  <h3 class="text-3xl font-bold text-center mb-10">Contact</h3>
+
+  <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+
+    <div class="space-y-4">
+      <a href="mailto:kerryopiy0758@gmail.com" class="block p-4 bg-gray-900 rounded hover:bg-gray-800">Email</a>
+      <a href="https://linkedin.com/in/kerry-opiyo" target="_blank" class="block p-4 bg-gray-900 rounded hover:bg-gray-800">LinkedIn</a>
+      <a href="https://github.com/kerryopiyo1-stack" target="_blank" class="block p-4 bg-gray-900 rounded hover:bg-gray-800">GitHub</a>
+    </div>
+
+    <form class="space-y-4">
+      <input placeholder="Name" class="w-full p-3 bg-gray-900 rounded"/>
+      <input type="email" placeholder="Email" class="w-full p-3 bg-gray-900 rounded"/>
+      <textarea placeholder="Message" class="w-full p-3 bg-gray-900 rounded"></textarea>
+      <button class="w-full py-2 bg-gray-800 rounded hover:bg-gray-700">Send</button>
+    </form>
+
+  </div>
 </section>
 
 </body>
